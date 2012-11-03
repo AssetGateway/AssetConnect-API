@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>asset</groupId>
-  <artifactId>connect.api</artifactId>
+  <artifactId>connect-api</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
@@ -24,9 +24,16 @@
         <configuration>
           <source>1.6</source>
           <target>1.6</target>
-          <archive> 
-            <addMavenDescriptor>false</addMavenDescriptor> 
-          </archive> 
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>2.4</version>
+        <configuration>
+          <archive>
+            <addMavenDescriptor>false</addMavenDescriptor>
+          </archive>
         </configuration>
       </plugin>
     </plugins>
