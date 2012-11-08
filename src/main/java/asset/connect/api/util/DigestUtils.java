@@ -9,8 +9,8 @@ public class DigestUtils {
 			MessageDigest messageDigest = MessageDigest.getInstance("SHA-1");
 			messageDigest.update(bytes, 0, bytes.length);
 			return hex(messageDigest.digest());
-		} catch(Throwable throwable) {
-			throwable.printStackTrace();
+		} catch(Exception exception) {
+			exception.printStackTrace();
 		}
 		return null;
 	}

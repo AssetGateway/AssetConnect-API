@@ -7,7 +7,7 @@ import asset.connect.api.result.Result;
 
 public interface Connect {
 
-	public boolean connect();
+	public void connect() throws Exception;
 	
 	public void disconnect();
 	
